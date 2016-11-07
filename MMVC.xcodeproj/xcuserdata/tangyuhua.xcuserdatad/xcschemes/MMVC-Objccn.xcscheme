@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC14BFB61DD0527E00B8B513"
-               BuildableName = "MMVC-Objccn.app"
-               BlueprintName = "MMVC-Objccn"
-               ReferencedContainer = "container:MMVC-Objccn.xcodeproj">
+               BuildableName = "MMVC.app"
+               BlueprintName = "MMVC"
+               ReferencedContainer = "container:MMVC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,24 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC14BFDC1DD05ADA00B8B513"
+               BuildableName = "MMVCTests.xctest"
+               BlueprintName = "MMVCTests"
+               ReferencedContainer = "container:MMVC.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC14BFB61DD0527E00B8B513"
-            BuildableName = "MMVC-Objccn.app"
-            BlueprintName = "MMVC-Objccn"
-            ReferencedContainer = "container:MMVC-Objccn.xcodeproj">
+            BuildableName = "MMVC.app"
+            BlueprintName = "MMVC"
+            ReferencedContainer = "container:MMVC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC14BFB61DD0527E00B8B513"
-            BuildableName = "MMVC-Objccn.app"
-            BlueprintName = "MMVC-Objccn"
-            ReferencedContainer = "container:MMVC-Objccn.xcodeproj">
+            BuildableName = "MMVC.app"
+            BlueprintName = "MMVC"
+            ReferencedContainer = "container:MMVC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC14BFB61DD0527E00B8B513"
-            BuildableName = "MMVC-Objccn.app"
-            BlueprintName = "MMVC-Objccn"
-            ReferencedContainer = "container:MMVC-Objccn.xcodeproj">
+            BuildableName = "MMVC.app"
+            BlueprintName = "MMVC"
+            ReferencedContainer = "container:MMVC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

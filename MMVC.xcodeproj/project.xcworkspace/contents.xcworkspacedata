@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MMVC-Objccn.xcodeproj">
+      location = "self:/Users/tangyuhua/Desktop/MMVC-Objccn/MMVC.xcodeproj">
    </FileRef>
 </Workspace>
