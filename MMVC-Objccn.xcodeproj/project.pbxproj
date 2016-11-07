@@ -14,6 +14,7 @@
 		EC14BFC71DD0527E00B8B513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC14BFC61DD0527E00B8B513 /* Assets.xcassets */; };
 		EC14BFCA1DD0527E00B8B513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC14BFC81DD0527E00B8B513 /* LaunchScreen.storyboard */; };
 		EC14BFD31DD052CF00B8B513 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EC14BFD21DD052CF00B8B513 /* Person.m */; };
+		EC14BFD61DD0577800B8B513 /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC14BFD51DD0577800B8B513 /* PersonViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		EC14BFCB1DD0527E00B8B513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC14BFD11DD052CF00B8B513 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		EC14BFD21DD052CF00B8B513 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EC14BFD41DD0577800B8B513 /* PersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
+		EC14BFD51DD0577800B8B513 /* PersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				EC14BFBE1DD0527E00B8B513 /* AppDelegate.m */,
 				EC14BFC01DD0527E00B8B513 /* PersonViewController.h */,
 				EC14BFC11DD0527E00B8B513 /* PersonViewController.m */,
+				EC14BFD41DD0577800B8B513 /* PersonViewModel.h */,
+				EC14BFD51DD0577800B8B513 /* PersonViewModel.m */,
 				EC14BFD11DD052CF00B8B513 /* Person.h */,
 				EC14BFD21DD052CF00B8B513 /* Person.m */,
 				EC14BFC31DD0527E00B8B513 /* Main.storyboard */,
@@ -156,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC14BFD61DD0577800B8B513 /* PersonViewModel.m in Sources */,
 				EC14BFC21DD0527E00B8B513 /* PersonViewController.m in Sources */,
 				EC14BFBF1DD0527E00B8B513 /* AppDelegate.m in Sources */,
 				EC14BFD31DD052CF00B8B513 /* Person.m in Sources */,

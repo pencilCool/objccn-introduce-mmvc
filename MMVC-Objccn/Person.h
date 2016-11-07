@@ -16,4 +16,7 @@
 @property (nonatomic, readonly) NSString *firstName;
 @property (nonatomic, readonly) NSString *lastName;
 @property (nonatomic, readonly) NSDate *birthdate;
+
+@property (nonatomic, readonly) NSString *nameText;
+@property (nonatomic, readonly) NSString *birthdateText;
 @end
