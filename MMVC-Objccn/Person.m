@@ -10,4 +10,15 @@
 
 @implementation Person
 
+- (instancetype)initWithSalutation:(NSString *)salutation firstName:(NSString *)firstName lastName:(NSString *)lastName birthdate:(NSDate *)birthdate {
+    self = [super init];
+    if (self) {
+        _salutation = salutation;
+        _firstName = firstName;
+        _lastName = lastName;
+        _birthdate = birthdate;
+    }
+    return self;
+}
+
 @end

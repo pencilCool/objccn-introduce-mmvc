@@ -23,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSDate *myBirthDay = [NSDate dateWithTimeIntervalSince1970:-26*365*12*60*60];
+    self.model = [[Person alloc]initWithSalutation:@"Hello world!" firstName:@"tang" lastName:@"yuhua" birthdate:myBirthDay];
     
     if (self.model.salutation.length > 0) {
         self.nameLabel.text = [NSString stringWithFormat:@"%@ %@ %@", self.model.salutation, self.model.firstName, self.model.lastName];
