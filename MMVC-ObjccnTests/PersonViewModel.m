@@ -1,39 +1,32 @@
-//
-//  PersonViewModel.m
-//  MMVC-Objccn
-//
-//  Created by tangyuhua on 2016/11/7.
-//  Copyright © 2016年 tangyuhua. All rights reserved.
-//
+#import <Specta/Specta.h> // #import "Specta.h" if you're using
+#import <Expecta.h>
+#import "PersonViewModel.h"
+#import "Person.h"
 
-#import <XCTest/XCTest.h>
 
-@interface PersonViewModel : XCTestCase
 
-@end
+SpecBegin(Person)
 
-@implementation PersonViewModel
+NSString *salutation = @"Dr.";
+NSString *firstName = @"first";
+NSString *lastName = @"last";
+NSDate *birthdate = [NSDate dateWithTimeIntervalSince1970:0];
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+it (@"should use the salutation available. ", ^{
+    Person *person = [[Person alloc] initWithSalutation:salutation firstName:firstName lastName:lastName birthdate:birthdate];
+    PersonViewModel *viewModel = [[PersonViewModel alloc] initWithPerson:person];
+    expect(viewModel.nameText).to.equal(@"Dr. first last");
+});
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+it (@"should not use an unavailable salutation. ", ^{
+    Person *person = [[Person alloc] initWithSalutation:nil firstName:firstName lastName:lastName birthdate:birthdate];
+    PersonViewModel *viewModel = [[PersonViewModel alloc] initWithPerson:person];
+    expect(viewModel.nameText).to.equal(@"first last");
+});
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
-@end
+it (@"should use the correct date format. ", ^{
+    Person *person = [[Person alloc] initWithSalutation:nil firstName:firstName lastName:lastName birthdate:birthdate];
+    PersonViewModel *viewModel = [[PersonViewModel alloc] initWithPerson:person];
+    expect(viewModel.birthdateText).to.equal(@"Thursday January 1, 1970");
+});
+SpecEnd
